@@ -11,9 +11,7 @@ open class EnvioEstandar(val numeroDeEnvio:Int, val pesoEnvio:Double, val altura
 }
 //--------subclase----------
 class EnvioPremium(numeroDeEnvio: Int, pesoEnvio: Double, altura: Double, ancho: Double,):EnvioEstandar(numeroDeEnvio,pesoEnvio,altura,ancho) {
-
     override var prioridad = "normal"
-
    override fun verInformacionDeEnvio(): String {
         return "${super.verInformacionDeEnvio()} + >> ubicaion exacta del envio << "
     }
