@@ -100,6 +100,8 @@ https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj92
 
 Todas las instancias son de tipo : GestionDePago que es la súper clase
 
+---------------------------
+
 Segundo ejemplo:
 **Extensión**
 
