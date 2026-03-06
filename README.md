@@ -25,5 +25,78 @@ Repositorio base para que el alumnado implemente los ejercicios de Moodle (Unida
 3. Implementa cada ejercicio dentro de su paquete.
 4. Documenta la resolución en el Markdown del ejercicio correspondiente.
 
+# --> Desarrollo
 
+## I. Práctica
+
+Sigue los pasos para cada una de las 2 estructuras elegidas (Especialización, Extensión, Especificación, Construcción). Usa Enlaces permanentes a código para ilustrar tus respuestas:
+
+I.a) Para **cada una** de las 2 estructuras elegidas:
+
+-   Piensa en **(1) una superclase** y **(2) dos subclases**.
+
+-   Crea las clases en Kotlin.
+
+**Explica tu propuesta de superclase y subclases para cada estructura, y el tipo de herencia que representa.**
+
+**RESPUESTA:**   Las estructuras que escogí fueron las **Extensión**, **Especificación**  :
+
+Primera propuesta:
+
+__Especificación:__
+
+La superclase
+
+    clases abstracta
+
+- GestionDePago
+
+subclase
+- PagoConEfectivo
+- PagoConTarjeta
+- PagoConCriptoMoneda
+
+Segunda propuesta:
+
+__Extensión__
+
+La súper clase es :
+- EnvioEstandar
+
+La subclase
+- EnvioPremium
+- EnvioUrgente
+
+I.b) Crea un ejemplo de uso con `main`:
+
+-   Asigna a una variable de la **superclase** instancias de las **subclases** (polimorfismo).
+
+-   Muestra salida por consola con “logs” (`println`) para que se vea el comportamiento y el flujo del programa.
+
+
+RESPUESTA: Explica tu propuesta de ejemplo de uso, qué se imprime en cada caso y por qué.
+
+__Especificación__
+
+Primer ejemplo:
+
+Mi propuesta es que tenemos una clase abstracta **GestionDePago** que contiene un método llamado **metodoDePago** que  las subclases heredan y sobre escriben según el uso interno
+
+		Para pago con cripto moneda: Solicita el numero bolsillo digital
+		Para pago con efectivo: Muestra puntos de pago
+		Para pago con tarjeta: pago solicita numero de tarjeta
+
+- PagoConEfectivo
+- PagoConTarjeta
+- PagoConCriptoMoneda
+
+ya que **GestionDePago** con tiene **metodoDePago** y este método es un método abstracto  las clases hijas están obligadas a implementarlo pero cada clase hija la usar de manera especifica
+aquí podemos ver el uso de el polimorfismos :
+
+https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj929/blob/1798aa92bb77f0ff616236ceadcb0f0e1d96cfd0/src/main/kotlin/es/ies/ejercicios/u6/ej61/Especificacion/mainEspecificacion.kt#L51-L62
+
+Todas las instancias son de tipo : GestionDePago que es la súper clase
+
+
+Segundo ejemplo:
 
