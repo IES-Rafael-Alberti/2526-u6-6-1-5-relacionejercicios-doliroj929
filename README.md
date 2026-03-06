@@ -25,7 +25,5 @@ Repositorio base para que el alumnado implemente los ejercicios de Moodle (Unida
 3. Implementa cada ejercicio dentro de su paquete.
 4. Documenta la resolución en el Markdown del ejercicio correspondiente.
 
-```
-numero de envio: 1 peso: 10.0 altura: 10.0 ancho: 10.0
-numero de envio: 2 peso: 30.0 altura: 30.0 ancho: 30.0 + ubicaion exacta del envio 
-```
+
+
