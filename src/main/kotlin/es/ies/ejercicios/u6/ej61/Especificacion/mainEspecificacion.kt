@@ -3,9 +3,7 @@ package es.ies.ejercicios.u6.ej61.Especificacion
 // ---------------> Especificación <-----------------------
 // SuperClase
 abstract class GestionDePago{
-  open fun metodoDePago():String{
-  return ""
- }
+  abstract fun metodoDePago():String
 }
 
 // SubClases
@@ -50,17 +48,17 @@ fun main() {
  println("Implementa cada ejercicio en su paquete y documenta en docs/ejercicios/6.x.md")
  // Unidad 6 — Ejercicios 6.1
 
- val pago01 = PagoConCritoMoneda()
- val pago02 = PagoConEfectivo()
- val pago03 = PagoConTarjeta()
+ val pago01:GestionDePago = PagoConCritoMoneda()
+ val pago02:GestionDePago = PagoConEfectivo()
+ val pago03:GestionDePago = PagoConTarjeta()
 
  pago01.metodoDePago()
  pago02.metodoDePago()
  pago03.metodoDePago()
 
- println("------ $pago01")
- println("-------$pago02")
- println("-------$pago03")
+ println("Para pago con cripto moneda: $pago01")
+ println("Para pago con efectivo: $pago02")
+ println("Para pago con tarjeta: $pago03")
 
 }
 
