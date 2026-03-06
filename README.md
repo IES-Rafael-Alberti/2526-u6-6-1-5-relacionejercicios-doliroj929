@@ -25,6 +25,8 @@ Repositorio base para que el alumnado implemente los ejercicios de Moodle (Unida
 3. Implementa cada ejercicio dentro de su paquete.
 4. Documenta la resolución en el Markdown del ejercicio correspondiente.
 
+### Realizado por: Daniel Felipe Oliveros Rojas
+
 # --> Desarrollo
 
 ## I. Práctica
@@ -76,7 +78,8 @@ I.b) Crea un ejemplo de uso con `main`:
 
 RESPUESTA: Explica tu propuesta de ejemplo de uso, qué se imprime en cada caso y por qué.
 
-__Especificación__
+
+-----> __Especificación__
 
 Primer ejemplo:
 
@@ -97,6 +100,9 @@ https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj92
 
 Todas las instancias son de tipo : GestionDePago que es la súper clase
 
+----------> Extensión 
 
 Segundo ejemplo:
+
+
 
