@@ -119,6 +119,8 @@ https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj92
 estas dos clase extienden la funcionalidad del método **verInformacionDeEnvio()** en el caso de __EnvioPremium__ especifica la ubicación del envió y en el caso de __EnvioUrgente__ la prioridad la reacciona a "ALTA"
 me diante la palabra reservada __super__ asiendo referencia  al metodo del la superclase o clase padre 
 
+
+Salida por pantalla:
 > numero de envio: 101 peso: 5.0 altura: 10.0 ancho: 10.0  Prioridad: normal
 >
 >numero de envio: 102 peso: 10.0 altura: 30.0 ancho: 30.0  Prioridad: normal  --> ubicaion exacta del envio <--
