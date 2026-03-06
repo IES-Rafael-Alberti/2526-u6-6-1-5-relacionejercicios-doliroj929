@@ -16,7 +16,7 @@ open class EnvioEstandar(val numeroDeEnvio:Int, val pesoEnvio:Double, val altura
     }
 }
 
-class EnvioPremium(numeroDeEnvio: Int, pesoEnvio: Double, altura: Double, ancho: Double,): EnvioEstandar(numeroDeEnvio,pesoEnvio,altura,ancho) {
+class EnvioPremium(numeroDeEnvio: Int, pesoEnvio: Double, altura: Double, ancho: Double,):EnvioEstandar(numeroDeEnvio,pesoEnvio,altura,ancho) {
 
     override var prioridad = "normal"
 
@@ -33,7 +33,7 @@ class EnvioPremium(numeroDeEnvio: Int, pesoEnvio: Double, altura: Double, ancho:
     }
 }
 
-class EnvioUrgente(numeroDeEnvio: Int,pesoEnvio: Double,altura: Double,ancho: Double): EnvioEstandar(numeroDeEnvio,pesoEnvio,altura,ancho){
+class EnvioUrgente(numeroDeEnvio: Int,pesoEnvio: Double,altura: Double,ancho: Double):EnvioEstandar(numeroDeEnvio,pesoEnvio,altura,ancho){
     override var prioridad = "ALTA"
 
     override fun verInformacionDeEnvio(): String {
@@ -57,14 +57,12 @@ fun main() {
 
     envio02.verUbicacionDeEnvio()
 
-
-
     println(envio01.verInformacionDeEnvio())
 
     println(envio02.verInformacionDeEnvio())
     println(envio02.verUbicacionDeEnvio())
 
-    println("${envio03.verInformacionDeEnvio()}")
+    println({envio03.verInformacionDeEnvio()})
     println("La prioridad del envio ${envio03.numeroDeEnvio} es ${envio03.verPrioridad()}")
 
 }

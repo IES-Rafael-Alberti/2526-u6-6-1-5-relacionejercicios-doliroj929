@@ -2,15 +2,16 @@ package es.ies.ejercicios.u6.ej61.Especificacion
 
 // ---------------> Especificación <-----------------------
 // SuperClase
-interface GestionDePago{
-  fun metodoDePago():String{
+abstract class GestionDePago{
+  open fun metodoDePago():String{
   return ""
  }
 }
 
 // SubClases
-class PagoConTarjeta():GestionDePago {
+class PagoConTarjeta():GestionDePago() {
  var inforamcion = ""
+
  override fun metodoDePago(): String{
   inforamcion = "pago solicita numero de tarjeta"
   return inforamcion
@@ -21,7 +22,7 @@ class PagoConTarjeta():GestionDePago {
  }
 }
 
-class PagoConEfectivo():GestionDePago{
+class PagoConEfectivo():GestionDePago(){
  var inforamcion = ""
  override fun metodoDePago(): String {
   inforamcion = "Muestra puntos de pago"
@@ -32,7 +33,7 @@ class PagoConEfectivo():GestionDePago{
  }
 }
 
-class PagoConCritoMoneda():GestionDePago{
+class PagoConCritoMoneda():GestionDePago(){
  var inforamcion = ""
  override fun metodoDePago(): String{
   inforamcion = "Solicita el numero bolsillo digital"
