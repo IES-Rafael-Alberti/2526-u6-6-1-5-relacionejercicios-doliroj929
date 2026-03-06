@@ -100,9 +100,29 @@ https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj92
 
 Todas las instancias son de tipo : GestionDePago que es la súper clase
 
-----------> Extensión 
-
 Segundo ejemplo:
+**Extensión**
+
+Mi propuesta es que tenemos una super clase **EnvioExtandar**  con un método  **verInformacionDeEnvio()** realiza la función de ver los datos del envió
+
+https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj929/blob/80faa3d9beb4ca43aa78065d39002337677f253a/src/main/kotlin/es/ies/ejercicios/u6/ej61/Extension/mainExtension.kt#L5-L11
+
+hay dos dos subclase
+
+- EnvioPremium
+- EnvioUrgente
+
+https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj929/blob/0851937ee9c670240056e44592a34ec2ad23f6b3/src/main/kotlin/es/ies/ejercicios/u6/ej61/Extension/mainExtension.kt#L12-L27
+
+estas dos clase extienden la funcionalidad del método **verInformacionDeEnvio()** en el caso de __EnvioPremium__ especifica la ubicación del envió y en el caso de __EnvioUrgente__ la prioridad la reacciona a "ALTA"
+
+> numero de envio: 101 peso: 5.0 altura: 10.0 ancho: 10.0  Prioridad: normal
+>
+>numero de envio: 102 peso: 10.0 altura: 30.0 ancho: 30.0  Prioridad: normal  --> ubicaion exacta del envio <--
+>
+> numero de envio: 103 peso: 15.0 altura: 60.0 ancho: 60.0  Prioridad: ALTA
+
+  
 
 
 
