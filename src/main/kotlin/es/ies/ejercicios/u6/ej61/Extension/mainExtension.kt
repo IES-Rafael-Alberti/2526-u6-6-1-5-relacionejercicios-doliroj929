@@ -15,8 +15,7 @@ class EnvioPremium(numeroDeEnvio: Int, pesoEnvio: Double, altura: Double, ancho:
     override var prioridad = "normal"
 
    override fun verInformacionDeEnvio(): String {
-       super.verInformacionDeEnvio()
-        return "numero de envio: $numeroDeEnvio peso: $pesoEnvio altura: $altura ancho: $ancho prioridad: $prioridad + >> ubicaion exacta del envio << "
+        return "${super.verInformacionDeEnvio()} + >> ubicaion exacta del envio << "
     }
 }
 
@@ -25,7 +24,7 @@ class EnvioUrgente(numeroDeEnvio: Int,pesoEnvio: Double,altura: Double,ancho: Do
     override fun verInformacionDeEnvio():String{
         super.verInformacionDeEnvio()
         prioridad = "ALTA"
-        return "numero de envio: $numeroDeEnvio peso: $pesoEnvio altura: $altura ancho: $ancho prioridad: $prioridad"
+        return super.verInformacionDeEnvio()
     }
 }
 
