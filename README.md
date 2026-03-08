@@ -116,7 +116,7 @@ hay dos dos subclase
 
 https://github.com/IES-Rafael-Alberti/2526-u6-6-1-5-relacionejercicios-doliroj929/blob/0851937ee9c670240056e44592a34ec2ad23f6b3/src/main/kotlin/es/ies/ejercicios/u6/ej61/Extension/mainExtension.kt#L12-L27
 
-estas dos clase extienden la funcionalidad del método **verInformacionDeEnvio()** en el caso de __EnvioPremium__ especifica la ubicación del envió y en el caso de __EnvioUrgente__ la prioridad la reacciona a "ALTA"
+estas dos clase extienden la funcionalidad del método **verInformacionDeEnvio()** en el caso de __EnvioPremium__ especifica la ubicación del envió y en el caso de __EnvioUrgente__ la prioridad la reacciona  a "ALTA"
 me diante la palabra reservada __super__ asiendo referencia  al metodo del la superclase o clase padre 
 
 
